@@ -1,0 +1,10 @@
+prefix=/mingw64
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libwmf
+Description: A library for reading and converting Windows MetaFile vector graphics (WMF)
+Version: 0.2.13
+Libs: -lwmf -lwmflite   -lfreetype  -L/mingw64/lib -lxml2 -lz -llzma -liconv -lm -lws2_32 -ljpeg -lpng16 -lz 
+Cflags: -I/mingw64/include/freetype2 -I/mingw64/include/libpng16 -I/mingw64/include/harfbuzz -I/mingw64/include/glib-2.0 -I/mingw64/lib/glib-2.0/include  

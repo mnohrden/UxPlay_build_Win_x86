@@ -1,0 +1,14 @@
+prefix=/mingw64
+exec_prefix=${prefix}
+libdir=/mingw64/lib
+includedir=/mingw64/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 59.8.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil 
+Libs.private: -lva_win32 -lva -lm -lvpl -lole32 -lgdi32 -luuid -lstdc++ -luser32 -lva -lbcrypt -latomic -ldl
+Cflags: -I${includedir}

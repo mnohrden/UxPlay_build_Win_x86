@@ -1,0 +1,11 @@
+prefix=/mingw64
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: ZVBI 
+Description: VBI Capturing and Decoding Library
+Requires: 
+Version: 0.2.42
+Libs: -L${libdir} -lzvbi -lm -lintl -lpthread -lm  -lws2_32 -liconv -lpng -lz
+Cflags: -I${includedir}

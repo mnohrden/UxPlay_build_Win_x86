@@ -1,0 +1,11 @@
+prefix=/mingw64
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+incdir=${prefix}/include
+
+Name: libkvazaar
+Description: Open-source HEVC encoder
+Version: 2.3.1
+Libs: -L${libdir} -lkvazaar
+Libs.private: -lpthread  -lcryptopp
+Cflags: -I${incdir}

@@ -1,0 +1,11 @@
+prefix=/mingw64
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: zbar
+Description: bar code scanning and decoding
+URL: http://zbar.sourceforge.net
+Version: 0.23.93
+Libs: -L${libdir} -lzbar
+Cflags: -I${includedir}

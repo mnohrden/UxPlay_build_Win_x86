@@ -1,0 +1,10 @@
+prefix=/mingw64
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: microDNS
+Description: mDNS simple implementation
+Version: 0.2.0
+Libs: -L${libdir} -lmicrodns -lws2_32 -liphlpapi
+Cflags: -I${includedir}

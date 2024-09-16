@@ -1,0 +1,14 @@
+prefix=/mingw64
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libheif
+Description: HEIF image codec.
+URL: https://github.com/strukturag/libheif
+Version: 1.18.2
+Requires:
+Requires.private: libde265 x265 kvazaar aom dav1d rav1e SvtAv1Enc libjpeg libopenjp2 libsharpyuv zlib libbrotlidec
+Libs: -L${libdir} -lheif
+Libs.private: -lstdc++
+Cflags: -I${includedir}

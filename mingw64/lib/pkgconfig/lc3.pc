@@ -1,0 +1,10 @@
+prefix=/mingw64
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: liblc3
+Description: LC3 codec library
+Version: 1.1.0
+Libs: -L${libdir} -llc3
+Libs.private: -lm
+Cflags: -I${includedir}

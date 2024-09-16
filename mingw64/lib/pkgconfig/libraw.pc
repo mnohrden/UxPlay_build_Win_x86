@@ -1,0 +1,12 @@
+prefix=/mingw64
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libraw
+Description: Raw image decoder library (non-thread-safe)
+Requires: lcms2
+Version: 0.21.2
+Libs: -L${libdir} -lraw  -fopenmp
+Libs.private: -ljasper -ljpeg 
+Cflags: -I${includedir}/libraw -I${includedir}

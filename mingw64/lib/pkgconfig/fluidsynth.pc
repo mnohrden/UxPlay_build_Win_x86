@@ -1,0 +1,12 @@
+prefix=/mingw64
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: FluidSynth
+Description: Software SoundFont synth
+Version: 2.3.6
+Requires.private: glib-2.0 gthread-2.0 sndfile portaudio-2.0 gmodule-2.0 sdl2 readline
+Libs: -L${libdir} -lfluidsynth
+Libs.private: -ldsound -lksuser -lwinmm -lole32 -lws2_32 -lm ${prefix}/lib/libgomp.dll.a ${prefix}/lib/libmingwthrd.a
+Cflags: -I${includedir}

@@ -1,0 +1,9 @@
+Name: openjph
+Description: Open source implementation of JPH
+Version: 0.15.0
+Requires: 
+prefix=/mingw64
+includedir=${prefix}/include
+libdir=${prefix}/lib
+Libs: -L${libdir} -lopenjph
+Cflags: -I${includedir}

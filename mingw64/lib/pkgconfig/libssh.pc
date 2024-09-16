@@ -1,0 +1,10 @@
+prefix=/mingw64
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libssh
+Description: The SSH Library
+Version: 0.11.0
+Libs: -L${libdir} -lssh
+Cflags: -I${includedir}

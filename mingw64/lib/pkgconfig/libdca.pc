@@ -1,0 +1,11 @@
+prefix=/mingw64
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libdca
+Description: A decoding library for DTS Coherent Acoustics streams.
+Version: 0.0.7
+Libs: -L${libdir} -ldca
+Libs.private: -lm
+Cflags: -I${includedir}

@@ -1,0 +1,12 @@
+prefix=/mingw64
+exec_prefix=${prefix}
+libdir=/mingw64/lib
+includedir=/mingw64/include
+
+Name: absl_log_structured
+Description: Abseil log_structured library
+URL: https://abseil.io/
+Version: 20240116
+Requires: absl_config = 20240116, absl_log_internal_structured = 20240116, absl_strings = 20240116
+Libs: -L${libdir}  
+Cflags: -I${includedir} -DNOMINMAX

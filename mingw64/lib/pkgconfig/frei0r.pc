@@ -1,0 +1,11 @@
+prefix=/mingw64
+exec_prefix=/mingw64
+libdir=/mingw64/lib
+includedir=/mingw64/include
+
+Name: frei0r
+Description: minimalistic plugin API for video effects
+Version: 1.8
+Libs:
+Cflags: -I${includedir}
+

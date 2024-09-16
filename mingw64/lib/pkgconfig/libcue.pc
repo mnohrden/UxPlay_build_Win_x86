@@ -1,0 +1,10 @@
+prefix=/mingw64
+exec_prefix=${prefix}
+libdir=/mingw64/lib
+includedir=/mingw64/include
+
+Name: libcue
+Description: Cuesheet parser library
+Version: 2.3.0
+Libs: -L${libdir} -lcue
+Cflags: -I${includedir}

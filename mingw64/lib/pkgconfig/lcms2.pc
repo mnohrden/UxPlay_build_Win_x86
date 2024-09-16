@@ -1,0 +1,10 @@
+prefix=/mingw64
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: lcms2
+Description: LCMS Color Management Library
+Version: 2.16
+Libs: -L${libdir} -llcms2 -llcms2_fast_float
+Libs.private: -lm -pthread
+Cflags: -I${includedir}

@@ -1,0 +1,15 @@
+prefix=/mingw64
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include/ImageMagick-7
+includearchdir=/mingw64/include/ImageMagick-7
+libname=MagickCore-7.Q16HDRI
+moduledir=${exec_prefix}/lib/ImageMagick-7.1.1/modules-Q16HDRI
+ 
+Name: MagickCore
+Description: MagickCore - C API for ImageMagick (ABI Q16HDRI)
+URL: https://github.com/ImageMagick
+Version: 7.1.1
+Cflags: -I${includearchdir} -I${includedir} -fopenmp -DMAGICKCORE_HDRI_ENABLE=1 -DMAGICKCORE_QUANTUM_DEPTH=16 -D_DLL -D_MT -DMAGICKCORE_CHANNEL_MASK_DEPTH=32
+Libs: -L${libdir} -l${libname}
+Libs.private: -L${libdir} -l${libname}  -llcms2 -llcms2_fast_float  -lfreetype -lraqm -llqr-1 -lglib-2.0 -lintl -lfftw3 -lxml2 -lflif -lfontconfig -lfreetype     -lbz2 -lz   -lltdl -lgdi32 -luser32 -lm    -lpthread   -lgomp -lm

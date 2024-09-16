@@ -1,0 +1,11 @@
+prefix=/mingw64
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libdts
+Description: Backward compatibility place-holder for libdca.
+Version: 0.0.7
+Requires: libdca = 0.0.7
+Libs: -L${libdir} -ldca
+Cflags: -I${includedir}/libdca

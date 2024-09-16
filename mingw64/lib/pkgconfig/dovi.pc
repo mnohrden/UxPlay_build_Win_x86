@@ -1,0 +1,11 @@
+prefix=/mingw64
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: dovi
+Description: Dolby Vision metadata parsing and writing
+Version: 3.3.1
+Libs: -L${libdir} -ldovi
+Cflags: -I${includedir}
+Libs.private:  -lkernel32 -ladvapi32 -lkernel32 -lntdll -luserenv -lws2_32 -lkernel32 -lws2_32 -lkernel32

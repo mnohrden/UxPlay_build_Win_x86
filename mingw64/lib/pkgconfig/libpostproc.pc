@@ -1,0 +1,14 @@
+prefix=/mingw64
+exec_prefix=${prefix}
+libdir=/mingw64/lib
+includedir=/mingw64/include
+
+Name: libpostproc
+Description: FFmpeg postprocessing library
+Version: 58.1.100
+Requires: 
+Requires.private: libavutil >= 59.8.100
+Conflicts:
+Libs: -L${libdir}  -lpostproc 
+Libs.private: -lm -latomic
+Cflags: -I${includedir}
